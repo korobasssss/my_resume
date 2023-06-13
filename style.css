@@ -1,0 +1,360 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+main {
+    min-height: 812px;
+}
+
+.header_name {
+    height: 22px;
+    width: 220px;
+    background-image: url(image/elements/Logo.png);
+    background-size: 100% 100%;
+}
+
+.photo {
+    display: grid;
+    height: 115%;
+
+    background-image: url(image/my_photo.jpg);
+    background-size: 100% 100%;
+}
+
+.glass {
+    position: relative;
+    left: 22.78%;
+    right: 28.16%;
+    top: 18%;
+    bottom: 53.86%;
+
+    width: 35%;
+    height: 20%;
+
+    background-image: url(image/elements/Union_glass.png);
+    background-size: 100% 100%;
+    transform: rotate(20deg);
+}
+
+.data_about_me {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 18px auto;
+
+}
+
+.union_red {
+    width: 60px;
+    height: 19px;
+    
+    background-image: url(image/elements/Union_red.png);
+    background-size: 100% 100%;
+}
+
+.color {
+    width: 100%;
+    background-color: #F51B1B;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.text_data {
+    color: #FFFFFF;
+}
+
+h1 {
+    line-height: 28px;
+    letter-spacing: -0.02em;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.data {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 23px auto;
+    column-gap: 5%;
+}
+
+.element {
+    width: 23px;
+    height: 20px;
+}
+
+.element_email {
+    width: 21px;
+    height: 14px;
+}
+
+.name {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    row-gap: 8px;
+}
+
+.find_me {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+}
+
+.about {
+    color: #FFFFFF;
+}
+
+.text_about_me {
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.column {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.column_title {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.column_name {
+    font-weight: 200;
+    letter-spacing: -0.01em;
+}
+
+.column_description {
+    font-weight: 200;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+hr {
+    border: none;
+    border-top: 0.5px solid #FFFFFF;
+    opacity: 0.4;
+}
+
+
+
+@media (width: 1440px) {
+    main {
+        display: grid;
+        grid-template-columns: 25% auto;
+    } 
+
+    .header {
+        display: grid;
+        justify-items: end;
+        padding-top: 26px;
+        padding-right: 40px;
+    }
+    
+    aside {
+        margin-left: 40px;
+        margin-bottom: 40px;
+    
+        display: grid;
+        grid-template-rows: 35% auto;
+    }
+    
+    .photo {
+        display: grid;
+        height: 115%;
+    }
+    
+    .glass {
+        left: 22.78%;
+        right: 28.16%;
+        top: 18%;
+        bottom: 53.86%;
+    }
+
+    .text_data {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        display: grid;
+        grid-template-rows: 30% auto;
+        row-gap: 40px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    
+    h5 {
+        font-size: 16px;
+    }
+
+    .about {
+        margin-top: 18px;
+        margin-left: 31px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        
+        display: grid;
+        grid-template-rows: 25% auto;
+    }
+
+    .text_about_me {
+        margin-bottom: 33px;
+        display: grid;
+        grid-template-columns: 70%;
+
+        font-size: 16px;
+    }
+    
+    .education_column {
+        background-image: url(image/elements/bg.png);
+        background-size: 100% 100%;
+        
+        padding: 20px;
+    }
+    
+    .column {
+        display: grid;
+        grid-template-columns: 20% auto;
+    }
+
+    .column_2 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 5px;
+    }
+    
+    .column_title {
+        font-size: 18px;
+    }
+    .column_name {
+        font-size: 18px;
+    }
+    .column_description {
+        font-size: 18px;
+    }  
+    
+    .column_skills {
+        word-spacing: 32px;
+    }
+}
+
+
+@media (width: 360px) {
+    main {
+        /* display: grid;
+        grid-template-rows: 650px auto; */
+    } 
+
+    .header {
+        display: grid;
+        justify-items: start;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    aside {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+
+        height: 650px;
+    
+        display: grid;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 96%;
+    }
+    
+    .photo {
+        display: grid;
+    }
+
+    .about {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 60px;
+/*     
+        display: grid;
+        grid-template-rows: 60% auto; */
+    }
+
+    .text_data {
+        padding-top: 24px;
+        padding-left: 16px;
+        padding-bottom: 40px;
+        
+        display: grid;
+        grid-template-rows: 20% auto;
+        row-gap: 34px;
+        
+        color: #FFFFFF;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h5 {
+        font-size: 14px;
+    }
+
+    .text_about_me {
+        display: grid;
+        grid-template-columns: 96%;
+
+        font-size: 16px;
+    }
+    
+    .education_column {
+        min-height: 250px;
+        margin-top: 25px;
+        background-image: url(image/elements/bg-mobile.png);
+        background-size: 100% 100%;
+
+        padding: 15px;
+    }
+    
+    .column {
+        display: grid;
+        grid-template-rows: 20% auto;
+        row-gap: 15px;
+    }
+
+    
+    .column_title {
+        font-size: 18px;
+    }
+    .column_name {
+        font-size: 12px;
+    }
+    .column_description {
+        font-size: 12px;
+    }    
+
+    .column_skills {
+        word-spacing: 16px;
+    }
+}
+
+

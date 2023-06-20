@@ -156,7 +156,7 @@ hr {
 
 
 
-@media (width: 1440px) {
+@media (width: 1440px) and (orientation: landscape){
     main {
         display: grid;
         grid-template-columns: 25% auto;
@@ -260,10 +260,8 @@ hr {
 }
 
 
-@media (width: 360px) {
+@media (width: 360px) and (orientation: portrait) {
     main {
-        /* display: grid;
-        grid-template-rows: 650px auto; */
     } 
 
     .header {
@@ -294,9 +292,6 @@ hr {
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 60px;
-/*     
-        display: grid;
-        grid-template-rows: 60% auto; */
     }
 
     .text_data {
